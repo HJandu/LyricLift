@@ -6,20 +6,17 @@ export const getSongLyrics = async (artist, title) => {
         const encodedArtist = encodeURIComponent(artist);
         const encodedTitle = encodeURIComponent(title);
 
-        // Make GET request to lyrics.ovh API
-        const response = await fetch(`https://api.lyrics.ovh/v1/${encodedArtist}/${encodedTitle}`);
+        const response = await axios.get(`https://api.lyrics.ovh/v1/${encodedArtist}/${encodedTitle}`);
         
-        if (!response.ok) {
+        // Check if the request was successful
+        if (response.status !== 200) {
             throw new Error('Failed to fetch lyrics');
         }
 
         // Extract lyrics from response data
-        const data = await response.json();
-        return data.lyrics; // Return the lyrics
+        return response.data.lyrics; // Return the lyrics
     } catch (error) {
         console.error("Error fetching lyrics:", error);
         return null;
     }
 };
-
-
