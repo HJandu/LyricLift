@@ -1,3 +1,18 @@
+
+import React, { useState } from 'react';
+import SearchLogic from "../../utils/searchFunction";
+
+function Search() {
+    return (
+        <div>
+            <SearchLogic />
+        </div>
+    );
+}
+
+export default Search;
+
+
 import React from "react";
 import { useState } from "react";
 import ky from 'ky';
@@ -47,3 +62,4 @@ export default function Search() {
         </div>
     );
 }
+
