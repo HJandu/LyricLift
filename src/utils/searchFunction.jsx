@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { getSongLyrics } from "./getLyrics";
 import { getTranslation } from "./getTranslation";
 import getYoutubeVideo from "./getYoutubeVideos";
+import getSpotifyTracks from "./getSpotifyTracks";
+
 
 // Debounce hook to delay search input processing
 function useDebounce(value, delay) {
@@ -58,6 +60,10 @@ function SearchLogic() {
                 // Get YouTube video info
                 const youtubeResponse = await getYoutubeVideo(`${searchArtist} ${searchTitle}`);
                 console.log("Youtube info:", youtubeResponse);
+
+                // Get Spotify tracks
+                const spotifyResponse = await getSpotifyTracks(`${searchArtist} ${searchTitle}`);
+                console.log("Spotify info:", spotifyResponse);
             } catch (error) {
                 setError(error);
             }
