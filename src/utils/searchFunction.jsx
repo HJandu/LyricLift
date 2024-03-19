@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getSongLyrics } from "./getLyrics";
-import { translateText } from "./getTranslation";
+import { getTranslation } from "./getTranslation";
 import getYoutubeVideo from "./getYoutubeVideos";
 
 // Debounce hook to delay search input processing
@@ -27,7 +27,7 @@ function SearchLogic() {
     const [error, setError] = useState(null);
 
     // Use debounce hook to delay search input processing
-    const debouncedSearch = useDebounce(search, 1000);
+    const debouncedSearch = useDebounce(search, 2000);
 
     useEffect(() => {
         if (!debouncedSearch) return;
@@ -53,9 +53,8 @@ function SearchLogic() {
                 console.log("Original Lyrics:", lyrics);
         
                 // Translate lyrics
-                const translatedLyrics = await translateText(lyrics, 'en');
+                const translatedLyrics = getTranslation(lyrics);
                 console.log("Translated Lyrics:", translatedLyrics);
-        
                 // Get YouTube video info
                 const youtubeResponse = await getYoutubeVideo(`${searchArtist} ${searchTitle}`);
                 console.log("Youtube info:", youtubeResponse);
@@ -73,7 +72,6 @@ function SearchLogic() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // You can remove this function if you're already handling the search logic in useEffect
     }
 
     return (
