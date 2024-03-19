@@ -3,12 +3,16 @@ import Home from './pages/home/home'
 import Search from './pages/search/search'
 import Profile from './pages/profile/profile'
 import Main_song from './pages/main_song/main_song'
-import Login from './pages/login/login'
+import Login from './components/login/login'
 import Navbar from './components/Navbar'
+// import Dashboard from './components/Dashboard'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 
-function App() {
+const code = new URLSearchParams(window.location.search).get('code')
 
+function App() {
+  // return code ? <Dashboard code={code} /> : <Login />
 
   return (
     <Router>
