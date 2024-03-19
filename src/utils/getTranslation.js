@@ -1,15 +1,34 @@
-import translate from 'translate';
+import axios from 'axios';
 
-translate.engine = 'google';
-translate.key = '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';
+export const getTranslation = async (lyrics) => {
 
-export async function translateText(text, target) {
     try {
-        const translatedText = await translate(text, target);
-        return translatedText;
+        const options = {
+            method: 'POST',
+            url: 'https://microsoft-translator-text.p.rapidapi.com/translate',
+            params: {
+                'to[0]': 'en',
+                'api-version': '3.0',
+                profanityAction: 'NoAction',
+                textType: 'plain'
+            },
+            headers: {
+                'content-type': 'application/json',
+                'X-RapidAPI-Key': '2d1153971amsh42ff866e3a13899p10c022jsn5ea1c0841888',
+                'X-RapidAPI-Host': 'microsoft-translator-text.p.rapidapi.com'
+            },
+            data: [
+                {
+                    Text: lyrics 
+                }
+            ]
+        };
+
+        const response = await axios.request(options);
+        const translatedLyrics = response.data[0].translations[0].text;
+        console.log("Translated Lyrics:", translatedLyrics) ;
+        return translatedLyrics;
     } catch (error) {
-        console.error("Error translating text:", error);
-        return null;
+        console.error("Error translating lyrics:", error);
     }
 }
-
