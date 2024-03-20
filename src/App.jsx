@@ -18,11 +18,11 @@ function App() {
       <Navbar />
       {/* Wrap Route elements in a Routes component */}
       <main className='container'>
-      <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/search" element={<Search />} />
-      <Route path="/main-song" element={<Main_song />} />        
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/main-song" element={<Main_song />} />
+        </Routes>
       </main>
     </Router>
   );
