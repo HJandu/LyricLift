@@ -1,5 +1,4 @@
 import ky from 'ky';
-
 const apiKey = 'AIzaSyDa5eIkh0TlHKFLAElwcAzFjz1gww5KOxg'
 
 const getYoutubeVideo = async (initialSearch) => {
