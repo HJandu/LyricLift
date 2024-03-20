@@ -1,5 +1,3 @@
-
-
 function Main_song() {
     return(
         <div>
@@ -9,3 +7,4 @@ function Main_song() {
 }
 
 export default Main_song;
+

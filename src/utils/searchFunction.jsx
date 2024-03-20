@@ -3,6 +3,10 @@ import { getSongLyrics } from "./getLyrics";
 import { getTranslation } from "./getTranslation";
 import getYoutubeVideo from "./getYoutubeVideos";
 import getSpotifyTracks from "./getSpotifyTracks";
+import SearchResults from '../components/SearchResults/searchResults';
+import YoutubePlayer from '../components/YoutubePlayer/youtubePlayer';
+import TransLyricsBox from '../components/TranslatedLyrics/transLyricsBox';
+import EnglishLyricsBox from '../components/TranslatedLyrics/englishLyricsbox';
 
 
 // Debounce hook to delay search input processing
@@ -27,6 +31,12 @@ function SearchLogic() {
     const [title, setTitle] = useState('');
     const [artist, setArtist] = useState('');
     const [error, setError] = useState(null);
+    const [results, setResults] = useState([]);
+    // original lyrics state
+    const [lyrics, setLyrics] = useState('');
+    const [translatedLyrics, setTranslatedLyrics] = useState('');
+    const [hasResults, setHasResults] = useState(false);
+
 
     // Use debounce hook to delay search input processing
     const debouncedSearch = useDebounce(search, 2000);
@@ -37,7 +47,7 @@ function SearchLogic() {
         const fetchData = async () => {
             try {
                 let searchArtist, searchTitle;
-        
+
                 const searchTerms = debouncedSearch.split(' ').map(term => term.trim());
                 if (searchTerms.length === 2) {
                     [searchArtist, searchTitle] = searchTerms;
@@ -45,21 +55,26 @@ function SearchLogic() {
                     searchArtist = searchTerms.join(' ');
                     searchTitle = searchTerms.join(' ');
                 }
-        
+                setHasResults(true);
+
                 // Update title and artist states
                 setTitle(searchTitle);
                 setArtist(searchArtist);
-        
+
                 // Fetch song lyrics
                 const lyrics = await getSongLyrics(searchArtist, searchTitle);
                 console.log("Original Lyrics:", lyrics);
-        
+                setLyrics(lyrics);
+
                 // Translate lyrics
-                const translatedLyrics = getTranslation(lyrics);
+                const translatedLyrics = await getTranslation(lyrics);
                 console.log("Translated Lyrics:", translatedLyrics);
+                setTranslatedLyrics(translatedLyrics);
+
                 // Get YouTube video info
                 const youtubeResponse = await getYoutubeVideo(`${searchArtist} ${searchTitle}`);
                 console.log("Youtube info:", youtubeResponse);
+                setResults(youtubeResponse);
 
                 // Get Spotify tracks
                 const spotifyResponse = await getSpotifyTracks(`${searchArtist} ${searchTitle}`);
@@ -68,7 +83,7 @@ function SearchLogic() {
                 setError(error);
             }
         };
-        
+
         fetchData();
     }, [debouncedSearch]);
 
@@ -87,8 +102,29 @@ function SearchLogic() {
                 <input type="text" placeholder="Search for a song or artist" name="search" value={search} onChange={handleChange} />
                 <button type="submit">Search</button>
             </form>
+
+            <div>
+                {hasResults ?
+                <>
+                <div className="card" >
+                    <div className="card-body">
+                        <h5 className="card-title">Lyrics</h5>
+                        <p className="card-text">{lyrics}</p>
+                    </div>
+                </div>
+                <div className="card">
+                <div className="card-body">
+                    <h5 className="card-title">Translated Lyrics</h5>
+                    <p className="card-text">{translatedLyrics}</p>
+                </div>
+            </div>
+            </>
+                : null}
+            </div>
+
         </div>
     );
 }
+
 
 export default SearchLogic;

@@ -3,10 +3,9 @@ import axios from 'axios';
 import { useLocation } from 'react-router-dom'; // Import useLocation hook
 import './login.css';
 const authEndpoint = 'https://accounts.spotify.com/authorize?';
-const clientId = '999273f16aad4d4d945f5df3698e7592';
 const redirectUri = 'http://localhost:5173/'; // Change the redirect URI to your callback route
 const scopes = ['user-library-read', 'playlist-read-private'];
-export const loginEndpoint = `${authEndpoint}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
+export const loginEndpoint = `${authEndpoint}client_id=${import.meta.env.VITE_SPOTIFY_CLIENT_ID}&redirect_uri=${redirectUri}&scope=${scopes.join(
   '%20'
 )}&response_type=token&show_dialog=true`;
 const apiClient = axios.create({

@@ -22,7 +22,6 @@ function App() {
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/search" element={<Search />} />
-      <Route path="/main-song" element={<Main_song />} />
       <Route path="/login" element={<Login />} />
         
       </Routes>
