@@ -4,7 +4,6 @@ import { getTranslation } from "./getTranslation";
 import getYoutubeVideo from "./getYoutubeVideos";
 import getSpotifyTracks from "./getSpotifyTracks";
 import SearchResults from '../components/SearchResults/searchResults';
-import YoutubePlayer from '../components/YoutubePlayer/youtubePlayer';
 import TransLyricsBox from '../components/TranslatedLyrics/transLyricsBox';
 import EnglishLyricsBox from '../components/TranslatedLyrics/englishLyricsbox';
 

@@ -5,6 +5,7 @@ import Profile from './pages/profile/profile'
 import Main_song from './pages/main_song/main_song'
 import Login from './components/login/login'
 import Navbar from './components/Navbar'
+import Footer from './utils/Footer/footer';
 // import Dashboard from './components/Dashboard'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
@@ -23,9 +24,10 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/search" element={<Search />} />
       <Route path="/login" element={<Login />} />
-        
+      
       </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }
