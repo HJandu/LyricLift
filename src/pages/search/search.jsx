@@ -1,7 +1,4 @@
-
 import SearchLogic from "../../utils/searchFunction";
-
-
 
 function Search() {
 
