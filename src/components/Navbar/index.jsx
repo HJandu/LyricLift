@@ -1,34 +1,34 @@
+import React from 'react';
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { useNavigate } from 'react-router-dom';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass, faMusic, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import 'materialize-css/dist/css/materialize.min.css';
+import "./navbar.css";
 
 export default function Navbar() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const history = useNavigate();
-
-  const handleSearch = () => {
-    // Redirect to the search page with the search term as a query parameter
-    history.push(`/search?q=${encodeURIComponent(searchTerm)}`);
-  };
-
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid"></div>
-      <Link className="navbar-brand" to="/">LyricLift</Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <Link className="navbar-brand" to="/Login">Login</Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <Link className="navbar-brand" to="/search">Search</Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      
-    </nav>
-  )
-}
+    <nav>
+      <div className="nav-wrapper teal lighten-2">
+        <Link to="/" className="brand-logo">
+          <img src="./src/assets/images/Logo.png" alt="Logo" width="50" height="50" className="rounded-logo" />
+        </Link>
 
+        <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <li>
+            <Link to="/search">
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </Link>
+          </li>
+          <li>
+            <Link to="/main-song">
+              <FontAwesomeIcon icon={faMusic} />
+            </Link>
+          </li>
+          <li>
+            <Link to="/Login" ><FontAwesomeIcon icon={faRightToBracket} /></Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+}
