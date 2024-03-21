@@ -1,44 +1,44 @@
 [
+  {
+      "id": 1,
+      "name": "Fied",
+      "title": "Luna",
+      "image": "../../public/assets/images/Feid.jpg",
+      "description": "song cover for Feid new song Luna"
+    },
     {
-        "id": 1,
-        "name": "Fied",
-        "title": "Luna",
-        "image": "../../public/assets/images/Feid.jpg",
-        "description": "song cover for Feid new song Luna"
-      },
-      {
-        "id": 2,
-        "name": "Nur Da",
-        "title": "Luna",
-        "image": "../../public/assets/images/Nur-da.jpg",
-        "description": "song cover for NuR Da new song Luna"
-      },
-      {
-        "id": 3,
-        "name": "Naza",
-        "title": "MMM",
-        "image": "../../public/assets/images/naza.jpg",
-        "description": "song cover for Naza new song MMM"
-      },
-      {
-        "id": 4,
-        "name": "Luna LLena",
-        "title": "Malu Trevejo",
-        "image": "../../public/assets/images/llena.jpg",
-        "description": "song cover for Luna new song Malu Trevejo"
-      },
-      {
-        "id": 5,
-        "name": "Irama",
-        "title": "Nera",
-        "image": "../../public/assets/images/nera.jpg",
-        "description": "song cover for Fied new song Luna"
-      },
-      {
-        "id": 6,
-        "name": "Luna LLena",
-        "title": "Normal",
-        "image": "../../public/assets/images/Luna.jpg",
-        "description": "song cover for Fied new song Luna"
-      }
+      "id": 2,
+      "name": "Dinos",
+      "title": "Helsinki",
+      "image": "../../public/assets/images/Dinos.jpg",
+      "description": "song cover for Dinos new song Helsinki"
+    },
+    {
+      "id": 3,
+      "name": "Naza",
+      "title": "MMM",
+      "image": "../../public/assets/images/naza.jpg",
+      "description": "song cover for Naza new song MMM"
+    },
+    {
+      "id": 4,
+      "name": "MHD",
+      "title": "Bebe",
+      "image": "../../public/assets/images/bebe.jpg",
+      "description": "song cover for MHD new song Bebe"
+    },
+    {
+      "id": 5,
+      "name": "Tayc",
+      "title": "DODO",
+      "image": "../../public/assets/images/dodo.jpeg",
+      "description": "song cover for Tayc new song DODO"
+    },
+    {
+      "id": 6,
+      "name": "Dadju",
+      "title": "Django",
+      "image": "../../public/assets/images/django.jpeg",
+      "description": "song cover for Dadju new song Django"
+    }
 ]
