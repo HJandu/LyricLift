@@ -1,0 +1,39 @@
+.slider-container {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    max-width: 30%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider {
+    width: 40%;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.slider-button {
+    position: absolute;
+    margin-left: -20px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #048bd3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.slider-button:hover {
+    background-color: #005f8b;
+}
+
+.header h1 {
+    color: #00273b;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}

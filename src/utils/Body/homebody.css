@@ -1,0 +1,28 @@
+.logo-info {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.logo-info img {
+    display: inline-flex;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+.text-info {
+    flex: 1; 
+}
+
+.text-info h2 {
+    margin-left: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.text-info p {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    color: #000000;
+    padding-bottom: 5px;
+}
