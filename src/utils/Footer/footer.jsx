@@ -5,7 +5,7 @@ import { mdiFacebook, mdiTwitter, mdiGooglePlus, mdiLinkedin } from '@mdi/js'
 function Footer() {
     return (
         <>
-            <footer className="page-footer center social-colored teal lighten-2">
+            <footer className="page-footer center social-colored teal darken-3">
                 <div className="container footer-content">
                     <div className="row">
                         <div></div>

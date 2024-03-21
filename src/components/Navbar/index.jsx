@@ -8,7 +8,7 @@ import "./navbar.css";
 export default function Navbar() {
   return (
     <nav>
-      <div className="nav-wrapper teal lighten-2">
+      <div className="nav-wrapper teal darken-3">
         <Link to="/" className="brand-logo">
           <img src="./src/assets/images/Logo.png" alt="Logo" width="50" height="50" className="rounded-logo" />
         </Link>
