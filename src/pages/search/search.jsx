@@ -1,5 +1,5 @@
 
-import SearchLogic from "../../utils/searchFunction";
+import SearchLogic from "../../utils/SearchFunction/searchFunction";
 
 
 
