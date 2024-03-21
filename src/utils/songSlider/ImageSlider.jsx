@@ -8,8 +8,6 @@ import French from "/src/assets/images/French.jpeg";
 import RnB from "/src/assets/images/R&B.jpeg";
 import indian from "/src/assets/images/indian.jpeg";
 
-
-
 const ImageSlider = () => {
     const [positionIndex, setPositionIndex] = useState(0);
 
