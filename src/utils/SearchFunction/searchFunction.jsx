@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { getSongLyrics } from "./getLyrics";
-import { getTranslation } from "./getTranslation";
-import getYoutubeVideo from "./getYoutubeVideos";
-import getSpotifyTracks from "./getSpotifyTracks";
-import SearchResults from '../components/SearchResults/searchResults';
-import TransLyricsBox from '../components/TranslatedLyrics/transLyricsBox';
-import EnglishLyricsBox from '../components/TranslatedLyrics/englishLyricsbox';
+import { getSongLyrics } from "../getLyrics";
+import { getTranslation } from "../getTranslation";
+import getYoutubeVideo from "../getYoutubeVideos";
+import getSpotifyTracks from "../getSpotifyTracks";
+import SearchResults from '../../components/SearchResults/searchResults';
+import TransLyricsBox from '../../components/TranslatedLyrics/transLyricsBox';
+import EnglishLyricsBox from '../../components/TranslatedLyrics/englishLyricsbox';
+import DeveloperPicks from '../../components/DeveloperPicks/developerPicks';
 
 
 // Debounce hook to delay search input processing
@@ -98,9 +99,11 @@ function SearchLogic() {
         <div>
             <h1>Search page</h1>
             <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="Search for a song or artist" name="search" value={search} onChange={handleChange} />
+                <input type="text" placeholder="artist name, song title" name="search" value={search} onChange={handleChange} />
                 <button type="submit">Search</button>
             </form>
+
+            <DeveloperPicks />
 
             <div>
                 {hasResults ?
