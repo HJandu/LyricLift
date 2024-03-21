@@ -3,3 +3,25 @@
     margin-top: 10px;
     margin-left: 10px;
 }
+
+.sidenav-container {
+    position: relative;
+}
+
+.close-btn {
+    position: rela;
+    top: 10px;
+    right: 10px;
+}
+
+.sidenav {
+    background-color: rgb(0, 126, 84);
+}
+
+
+@media screen and (max-width: 600px) {
+    .brand-logo img {
+        width: 30px;
+        height: auto;
+    }
+}

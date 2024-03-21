@@ -4,11 +4,11 @@
 }
 
 .logo-info img {
-    width: 100px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Add some spacing between the image and text */
+    width: 100px;
+    height: auto; 
+    margin-right: 20px; 
 }
 
 .text-info {
-    flex: 1; /* Allow the text to take up remaining space */
+    flex: 1; 
 }
