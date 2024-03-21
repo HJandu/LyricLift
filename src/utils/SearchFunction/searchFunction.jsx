@@ -107,21 +107,27 @@ function SearchLogic() {
 
             <div>
                 {hasResults ?
-                <>
-                <div className="card" >
-                    <div className="card-body">
-                        <h5 className="card-title">Lyrics</h5>
-                        <p className="card-text">{lyrics}</p>
-                    </div>
-                </div>
-                <div className="card">
-                <div className="card-body">
-                    <h5 className="card-title">Translated Lyrics</h5>
-                    <p className="card-text">{translatedLyrics}</p>
-                </div>
-            </div>
-            </>
-                : null}
+                    <>
+                        <div className="row">
+                            <div className="col-sm-6 mb-3 mb-sm-0">
+                                <div className="card text-center" >
+                                    <div className="card-body">
+                                        <h5 className="card-title">Lyrics</h5>
+                                        <p className="card-text">{lyrics}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <div className="card text-center">
+                                    <div className="card-body">
+                                        <h5 className="card-title">Translated Lyrics</h5>
+                                        <p className="card-text">{translatedLyrics}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </>
+                    : null}
             </div>
 
         </div>
