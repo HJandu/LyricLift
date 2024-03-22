@@ -102,8 +102,6 @@ function SearchLogic() {
                 <button type="submit">Search</button>
             </form>
 
-            <DeveloperPicks />
-
             <div>
                 {hasResults ?
                     <>
@@ -111,8 +109,8 @@ function SearchLogic() {
                             <div className="col-sm-6 mb-3 mb-sm-0">
                                 <div className="card text-center" >
                                     <div className="card-body">
-                                        <h5 className="card-title">Lyrics</h5>
-                                        <p className="card-text">{lyrics}</p>
+                                        <h5 className="card-title">Original Lyrics</h5>
+                                        <pre className="card-text">{lyrics}</pre>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +118,7 @@ function SearchLogic() {
                                 <div className="card text-center">
                                     <div className="card-body">
                                         <h5 className="card-title">Translated Lyrics</h5>
-                                        <p className="card-text">{translatedLyrics}</p>
+                                        <pre className="card-text">{translatedLyrics}</pre>
                                     </div>
                                 </div>
                             </div>
@@ -128,6 +126,7 @@ function SearchLogic() {
                     </>
                     : null}
             </div>
+            <DeveloperPicks />
 
         </div>
     );

@@ -7,10 +7,10 @@ import "./style.css";
 export default function DeveloperPicks() {
     return (
         <div>
-            <h2>Top Recommended Songs</h2>
+            <h2 className="display-4">Top Recommended Songs</h2>
             <div className="row">
                 {artist.map((artist) => (
-                    <div className="col-md-4 col-sm-12" key={artist.id}>
+                    <div className="col-md-4 col-sm-12" height="100" key={artist.id}>
                         <DeveloperPickCard
                             key={artist.id}
                             name={artist.name}
