@@ -5,6 +5,7 @@ import { faMagnifyingGlass, faBars, faTimes } from '@fortawesome/free-solid-svg-
 import M from 'materialize-css/dist/js/materialize.min.js';
 import 'materialize-css/dist/css/materialize.min.css';
 import "./navbar.css";
+import logoImage from "../../assets/images/Logo.png";
 
 export default function Navbar() {
 
@@ -19,7 +20,7 @@ export default function Navbar() {
       <nav className="nav-wrapper teal darken-3">
         <div className="container">
           <Link to="/" className="brand-logo">
-            <img src="./src/assets/images/Logo.png" alt="Logo" className="rounded-logo" width={50} />
+            <img src={logoImage} alt="Logo" className="rounded-logo" width={50} />
           </Link>
           <a href="#" data-target="mobile-links" className="sidenav-trigger">
             <FontAwesomeIcon icon={faBars} />
