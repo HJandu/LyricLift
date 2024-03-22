@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/home'
 import Search from './pages/search/search'
 import Navbar from './components/Navbar'
-import Footer from './utils/Footer/footer';
+import Footer from './components/Footer/footer'
 // import Dashboard from './components/Dashboard'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
