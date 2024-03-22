@@ -3,42 +3,42 @@
       "id": 1,
       "name": "Feid",
       "title": "Luna",
-      "image": "../../public/assets/images/Feid.jpg",
+      "image": "/assets/images/Feid.jpg",
       "description": "song cover for Feid new song Luna"
     },
     {
       "id": 2,
       "name": "Dinos",
       "title": "Helsinki",
-      "image": "../../public/assets/images/dino.jpeg",
+      "image": "/assets/images/dino.jpeg",
       "description": "song cover for Dinos new song Helsinki"
     },
     {
       "id": 3,
       "name": "Naza",
       "title": "MMM",
-      "image": "../../public/assets/images/naza.jpeg",
+      "image": "/assets/images/naza.jpeg",
       "description": "song cover for Naza new song MMM"
     },
     {
       "id": 4,
       "name": "MHD",
       "title": "Bebe",
-      "image": "../../public/assets/images/bebe.jpg",
+      "image": "/assets/images/bebe.jpg",
       "description": "song cover for MHD new song Bebe"
     },
     {
       "id": 5,
       "name": "Tayc",
       "title": "DODO",
-      "image": "../../public/assets/images/dodo.jpeg",
+      "image": "/assets/images/dodo.jpeg",
       "description": "song cover for Tayc new song DODO"
     },
     {
       "id": 6,
       "name": "Dadju",
       "title": "Django",
-      "image": "../../public/assets/images/django.jpeg",
+      "image": "/assets/images/django.jpeg",
       "description": "song cover for Dadju new song Django"
     }
 ]
