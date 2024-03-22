@@ -1,9 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/home'
 import Search from './pages/search/search'
-import Profile from './pages/profile/profile'
-import Main_song from './pages/main_song/main_song'
-import Login from './components/login/login'
 import Navbar from './components/Navbar'
 import Footer from './utils/Footer/footer';
 // import Dashboard from './components/Dashboard'
@@ -23,8 +20,6 @@ function App() {
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/search" element={<Search />} />
-      <Route path="/login" element={<Login />} />
-      
       </Routes>
       </main>
       <Footer />

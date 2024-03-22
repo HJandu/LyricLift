@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faMusic, faRightToBracket, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import 'materialize-css/dist/css/materialize.min.css';
 import "./navbar.css";
@@ -31,14 +31,6 @@ export default function Navbar() {
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
               </Link>
             </li>
-            <li>
-              <Link to="/main-song">
-                <FontAwesomeIcon icon={faMusic} />
-              </Link>
-            </li>
-            <li>
-              <Link to="/Login" ><FontAwesomeIcon icon={faRightToBracket} /></Link>
-            </li>
           </ul>
         </div>
       </nav>
@@ -52,9 +44,6 @@ export default function Navbar() {
           </div>
           <li><a href='/'>Home</a></li>
           <li><a href='/search'>Search</a></li>
-          <li><a href='/main-song'>Main Song</a></li>
-          <li><a href='/Login'>Login</a></li>
-
         </ul>
 
       </div>
