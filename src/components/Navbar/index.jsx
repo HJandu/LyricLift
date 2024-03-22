@@ -44,15 +44,16 @@ export default function Navbar() {
 
       <div className="sidenav-container">
         <ul className="sidenav" id="mobile-links">
-          <li><a href='/'>Home</a></li>
-          <li><a href='/search'>Search</a></li>
-          <li><a href='/main-song'>Main Song</a></li>
-          <li><a href='/Login'>Login</a></li>
           <div className="close-btn">
             <a href="#" className="close-icon" onClick={() => M.Sidenav.getInstance(document.querySelector('.sidenav')).close()}>
               <FontAwesomeIcon icon={faTimes} />
             </a>
           </div>
+          <li><a href='/'>Home</a></li>
+          <li><a href='/search'>Search</a></li>
+          <li><a href='/main-song'>Main Song</a></li>
+          <li><a href='/Login'>Login</a></li>
+
         </ul>
 
       </div>

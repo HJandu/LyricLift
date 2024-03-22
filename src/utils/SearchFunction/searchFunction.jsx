@@ -97,7 +97,6 @@ function SearchLogic() {
 
     return (
         <div>
-            <h1>Search page</h1>
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="artist name, song title" name="search" value={search} onChange={handleChange} />
                 <button type="submit">Search</button>
