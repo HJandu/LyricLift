@@ -95,9 +95,12 @@ function SearchLogic() {
         e.preventDefault();
     }
 
+    const handleCardClick = (artistName, songTitle) => {
+        setSearch(`${artistName}, ${songTitle}`);
+      };
+
     return (
         <div>
-            <h1>Search page</h1>
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="artist name, song title" name="search" value={search} onChange={handleChange} />
                 <button type="submit">Search</button>
@@ -127,7 +130,7 @@ function SearchLogic() {
                     </>
                     : null}
             </div>
-            <DeveloperPicks />
+            <DeveloperPicks onCardClick={handleCardClick} />
 
         </div>
     );
