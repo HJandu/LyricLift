@@ -10,14 +10,14 @@
       "id": 2,
       "name": "Dinos",
       "title": "Helsinki",
-      "image": "../../public/assets/images/Dinos.jpg",
+      "image": "../../public/assets/images/dino.jpeg",
       "description": "song cover for Dinos new song Helsinki"
     },
     {
       "id": 3,
       "name": "Naza",
       "title": "MMM",
-      "image": "../../public/assets/images/naza.jpg",
+      "image": "../../public/assets/images/naza.jpeg",
       "description": "song cover for Naza new song MMM"
     },
     {
