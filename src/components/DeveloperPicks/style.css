@@ -1,4 +1,12 @@
 h2{
     text-align: center;
-    font-size: large;
+    font-weight: 200;
+    
 }
+
+.col-md-4.col-sm-12{
+    max-width: 16rem;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+

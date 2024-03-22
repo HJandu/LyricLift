@@ -8,5 +8,13 @@ button {
     margin: 0 0.5rem;
     padding: 0.5rem 1rem;
     transition: all 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+h5.card-title {
+    color: rgb(32, 81, 68);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
