@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { getSongLyrics } from "../getLyrics";
 import { getTranslation } from "../getTranslation";
-import getYoutubeVideo from "../getYoutubeVideos";
-import getSpotifyTracks from "../getSpotifyTracks";
-import SearchResults from '../../components/SearchResults/searchResults';
 import TransLyricsBox from '../../components/TranslatedLyrics/transLyricsBox';
 import EnglishLyricsBox from '../../components/TranslatedLyrics/englishLyricsbox';
 import DeveloperPicks from '../../components/DeveloperPicks/developerPicks';
-
 
 // Debounce hook to delay search input processing
 function useDebounce(value, delay) {
@@ -97,7 +93,7 @@ function SearchLogic() {
 
     const handleCardClick = (artistName, songTitle) => {
         setSearch(`${artistName}, ${songTitle}`);
-      };
+};
 
     return (
         <div>
