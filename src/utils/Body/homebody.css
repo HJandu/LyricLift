@@ -1,3 +1,4 @@
+/* Default styles */
 .logo-info {
     display: flex;
     align-items: center; /* Align items vertically */
@@ -10,7 +11,7 @@
 }
 
 .text-info {
-    flex: 1; 
+    flex: 1;
 }
 
 .text-info h2 {
@@ -25,4 +26,27 @@
     font-size: 1.5rem;
     color: #000000;
     padding-bottom: 5px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .logo-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .text-info h2,
+    .text-info p {
+        margin-left: 0;
+    }
+
+    .logo-info img {
+        width: 100px;
+        margin-top: 20px;
+    }
 }

@@ -1,3 +1,4 @@
+/* Default styles */
 .slider-container {
     display: flex;
     justify-content: center;
@@ -36,4 +37,24 @@
     text-align: center;
     margin-bottom: 20px;
     padding-top: 30px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .slider-container {
+        height: auto;
+        max-width: 60%;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slider-button {
+        bottom: 10px;
+    }
+
+    .h-screen {
+        height: 50vh !important;
+    }
 }
