@@ -14,7 +14,7 @@ export const getTranslation = async (lyrics) => {
             },
             headers: {
                 'content-type': 'application/json',
-                'X-RapidAPI-Key': '2d1153971amsh42ff866e3a13899p10c022jsn5ea1c0841888',
+                'X-RapidAPI-Key': 'b5872dee32msh3166213a4941ed6p1342a1jsnb11ef804b7de',
                 'X-RapidAPI-Host': 'microsoft-translator-text.p.rapidapi.com'
             },
             data: [
