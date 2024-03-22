@@ -1,6 +1,6 @@
 
 import './homebody.css'
-import logoImage from '../../assets/images/logo.png'
+import logoImage from '../../assets/images/Logo.png'
 
 function HomeBody() {
     return (
