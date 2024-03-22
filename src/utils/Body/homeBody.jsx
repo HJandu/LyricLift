@@ -1,11 +1,12 @@
 
 import './homebody.css'
+import logoImage from '../../assets/images/logo.png'
 
 function HomeBody() {
     return (
         <div className='home-info-container'>
             <div className='logo-info'>
-                <img src='./src/assets/images/logo.png' alt="Logo" />
+                <img src={logoImage} alt="Logo" />
                 <div className="text-info">
                     <h2>LyricLift</h2>
                     <p>LyricLift is a website that provides translations of songs from around the world into English.<br />
