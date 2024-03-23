@@ -81,9 +81,11 @@ LyricLift has the potential to be further developed.
 * [Figma](https://www.figma.com)
 
 ## <a id="deploy-header"></a>Deployment
-LyricLift has been deployed using [Netlify](https://www.netlify.com/) 
+LyricLift has been deployed using [Netlify](https://www.netlify.com/) <br>
 
-Click [here](https://lyriclift.netlify.app/) to access the app.
+[LyricLift Demo.webm](https://github.com/HJandu/LyricLift/assets/116304118/3fa0d703-da47-4d7b-bf50-f25fa653ecc7)
+
+To access the app, please click [here](https://lyriclift.netlify.app/) 
 
 ## <a id="coll-header"></a> Team Software Sorcerers 
 * [Hardip Jandu](https://github.com/HJandu)
