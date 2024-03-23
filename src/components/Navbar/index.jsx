@@ -42,8 +42,8 @@ export default function Navbar() {
               <FontAwesomeIcon icon={faTimes} />
             </a>
           </div>
-          <li><a href='/'>Home</a></li>
-          <li><a href='/search'>Search</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/search">Search</Link></li>
         </ul>
 
       </div>
