@@ -80,8 +80,9 @@ LyricLift has the potential to be further developed.
 * [Bootstrap](https://getbootstrap.com)
 * [Figma](https://www.figma.com)
 
-## <a id="deploy-header"></a>Deployment Link
-LyricLift has been deployed using Netlify. 
+## <a id="deploy-header"></a>Deployment
+LyricLift has been deployed using [Netlify](https://www.netlify.com/) 
+
 Click [here](https://lyriclift.netlify.app/) to access the app.
 
 ## <a id="coll-header"></a> Team Software Sorcerers 
