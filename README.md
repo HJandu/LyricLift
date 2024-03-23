@@ -56,7 +56,7 @@ To use the LyricLift app:
 2) Run `npm i` to install required dependencies.
 3) Run `npm run dev`
 
-## <a id="tech-header"></a>Technology
+## <a id="tech-header"></a>Technologies used
 - JavaScript | HTML | CSS
 - React
 - Node.js
